@@ -70,7 +70,7 @@ const ContactUs = () => {
         <div className="bg-white shadow-xl rounded-xl overflow-hidden">
           <div className="grid md:grid-cols-2">
             {/* Contact Information Panel */}
-            <div className="bg-gradient-to-br from-[#302c20] to-[#010101] text-white p-8 lg:p-12">
+            <div className="bg-gradient-to-br from-[#302c20] to-black text-white p-8 lg:p-12">
               <h2 className="text-2xl font-bold mb-6 text-[#fff]">Get in Touch</h2>
               <p className="text-white mb-8">
                 Whether you need document clearance services or have questions

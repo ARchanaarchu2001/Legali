@@ -25,7 +25,7 @@ const WhyChooseUsComponent = () => {
   ];
 
   return (
-    <section className="py-20 bg-white text-[#010101]">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Our Presence Section */}
         <div className="mb-20">
@@ -35,7 +35,7 @@ const WhyChooseUsComponent = () => {
                className="text-4xl font-bold mb-6 text-[#b8985a]">
                 Our Presence
               </h2>
-              <p className="text-lg text-[#010101] mb-6">
+              <p className="text-lg text-black mb-6">
                 We proudly serve clients across the UAE, including Abu Dhabi,
                 Dubai, Sharjah, Umm al-Quwain, Fujairah, Ajman, and Ras
                 al-Khaimah. No matter where you are, our services are just a
@@ -70,7 +70,7 @@ const WhyChooseUsComponent = () => {
 
         {/* Why Choose Us Section */}
         <div className="text-center mb-16 ">
-          <h2 className="text-4xl font-bold mb-6 text-[#010101]">
+          <h2 className="text-4xl font-bold mb-6 text-black ">
             Why Choose
             <span  
              className="text-[#b8985a] uppercase pl-2 pr-2">
@@ -79,7 +79,7 @@ const WhyChooseUsComponent = () => {
             Documents Clearing Services LLC
           </h2>
           <div  className="w-24 h-1 bg-[#b8985a] mx-auto mb-6 rounded-full"></div>
-          <p className="max-w-3xl mx-auto text-lg text-[#010101]">
+          <p className="max-w-3xl mx-auto text-lg text-black">
             Our dedicated team at{' '}
             <span 
             className=" font-semibold text-[#b8985a]">Legli Profile</span>{' '}
@@ -98,7 +98,7 @@ const WhyChooseUsComponent = () => {
               key={index}
               className="bg-[#302c20] rounded-xl p-8 border border-[#b8985a]/30 hover:border-[#b8985a] transition-all duration-300 hover:shadow-lg hover:shadow-[#b8985a]/10 flex flex-col items-center text-center group"
             >
-              <div className="mb-5 bg-[#010101] p-4 rounded-full border  border-[#b8985a]/30 group-hover:border-[#b8985a] transition-all duration-300 ">
+              <div className="mb-5 bg-black p-4 rounded-full border  border-[#b8985a]/30 group-hover:border-[#b8985a] transition-all duration-300 ">
                 {reason.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3 text-[#b8985a]">
@@ -116,9 +116,9 @@ const WhyChooseUsComponent = () => {
         href="https://wa.me/971559217176" 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="bg-gradient-to-r from-[#b8985a] to-[#9c8544] hover:from-[#9c8544] hover:to-[#b8985a] text-[#010101] px-2 py- 1 rounded-full shadow-lg shadow-[#b8985a]/20 flex items-center justify-center transition-all duration-300 transform hover:scale-105"
+        className="bg-gradient-to-r from-[#b8985a] to-[#9c8544] hover:from-[#9c8544] hover:to-[#b8985a]  px-2 py- 1 rounded-full shadow-lg shadow-[#b8985a]/20 flex items-center justify-center transition-all duration-300 transform hover:scale-105"
   >
-        <button className="bg-gradient-to-r from-[#b8985a] to-[#9c8544] hover:from-[#9c8544] hover:to-[#b8985a] text-[#010101] px-5 py-3 rounded-full shadow-lg shadow-[#b8985a]/20 flex items-center justify-center transition-all duration-300 transform hover:scale-105">
+        <button className="bg-gradient-to-r from-[#b8985a] to-[#9c8544] hover:from-[#9c8544] hover:to-[#b8985a]  px-5 py-3 rounded-full shadow-lg shadow-[#b8985a]/20 flex items-center justify-center transition-all duration-300 transform hover:scale-105">
           <MessageSquare className="w-5 h-5 mr-2" />
           <span className="font-medium">Let's Chat!</span>
         </button>

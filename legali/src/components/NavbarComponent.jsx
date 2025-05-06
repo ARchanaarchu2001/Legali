@@ -120,8 +120,8 @@ const NavbarComponent = () => {
                   >
                     <Link
                       to={item.href}
-                      style={{ color: '#010101' }}
-                      className=" hover:text-emerald-600 transition-colors font-medium flex items-center"
+                      // style={{ color: '#010101' }}
+                      className="hover:text-[#b8985a] transition-colors font-medium flex items-center"
                     >
                       {item.name}
                       <ChevronDown className="ml-1 w-4 h-4" />

@@ -19,14 +19,14 @@ const ServiceIdPage = () => {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12 items-center">
               <div className="w-full lg:w-1/2 z-10">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#b8985a] leading-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6  leading-tight text-black">
                   {service.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-[#9c8544] mb-8 leading-relaxed">
+                <p className="text-xl md:text-2xl text-black mb-8 leading-relaxed">
                   {service.description}
                 </p>
                 
-                <p className="text-[#9c8544] mb-10 max-w-2xl">
+                <p className=" mb-10 max-w-2xl text-black">
                   {service.longDescription}
                 </p>
                 <div className="flex flex-wrap gap-4">
@@ -54,7 +54,7 @@ const ServiceIdPage = () => {
                   
                   <a
                     href="/contactUs"
-                    className="bg-white border border-[#9c8544] hover:border-[#b8985a] text-[#010101] py-3 px-8 rounded-lg font-medium transition-all duration-300 shadow hover:shadow-md">
+                    className="bg-white text-black border border-[#9c8544] hover:border-[#b8985a]  py-3 px-8 rounded-lg font-medium transition-all duration-300 shadow hover:shadow-md">
                 
                         Schedule Consultation</a>
                   
@@ -83,10 +83,10 @@ const ServiceIdPage = () => {
         <section className="py-16 md:py-24 bg-[#ffffff]">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#010101]">
+              <h2 className="text-black text-3xl md:text-4xl font-bold mb-6 ">
                 Key Features
               </h2>
-              <p className="text-xl text-[#010101]">
+              <p className="text-xl text-black">
                 Our {service.title.toLowerCase()} services are designed to
                 deliver exceptional results that drive your business forward.
               </p>
@@ -96,9 +96,9 @@ const ServiceIdPage = () => {
               {service.features?.map((feature, index) => (
                 <div
                   key={index}
-                  className=" hover:bg-[#9c8544] rounded-xl p-6 transition-all duration-300 border border-[#b8985a] hover:border-[#b8985a] hover:shadow-md group"
+                  className="text-black hover:bg-[#9c8544] rounded-xl p-6 transition-all duration-300 border border-[#b8985a] hover:border-[#b8985a] hover:shadow-md group"
                 >
-                  <div className="w-14 h-14 bg-[#b8985a] rounded-lg flex items-center justify-center mb-6 text-[#010101] group-hover:bg-[#9c8544]  group-hover:text-white transition-all duration-300">
+                  <div className="w-14 h-14 bg-[#b8985a] rounded-lg flex items-center justify-center mb-6  group-hover:bg-[#9c8544]  group-hover:text-white transition-all duration-300">
                     {/* Feature icon - replace with appropriate icons */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -115,10 +115,10 @@ const ServiceIdPage = () => {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#010101] group-hover:text-white transition-all duration-300">
+                  <h3 className="text-xl text-black font-semibold mb-3  group-hover:text-white transition-all duration-300">
                     {feature}
                   </h3>
-                  <p className="text-[#010101] group-hover:text-white transition-all duration-300">
+                  <p className="text-black  group-hover:text-white transition-all duration-300">
                     Our experts ensure this feature is implemented to the
                     highest standards for maximum effectiveness.
                   </p>
@@ -132,10 +132,10 @@ const ServiceIdPage = () => {
         <section className="py-16 md:py-24 bg-[#fff]">
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#010101]">
+              <h2 className="text-3xl text-black md:text-4xl font-bold mb-4 ">
                 Our Process
               </h2>
-              <p className="text-lg text-[#010101]">
+              <p className="text-lg text-black">
                 A thoughtful approach for exceptional results
               </p>
             </div>
@@ -158,7 +158,7 @@ const ServiceIdPage = () => {
 
                       <div
                         className={`bg-[#9c8544] p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 relative ${index % 2 === 0 ? "md:mr-6 md:text-right" : "md:ml-6"}`}>
-                        <span className="inline-block mb-2 px-3 py-1 text-xs font-medium rounded-full bg-[#010101] text-[#fff]">
+                        <span className="inline-block mb-2 px-3 py-1 text-xs font-medium rounded-full bg-black text-[#fff]">
                           Step {index + 1}
                         </span>
                         <h3 className="text-xl font-semibold mb-3 text-[#fff]">
@@ -177,10 +177,10 @@ const ServiceIdPage = () => {
         <section className="py-16 md:py-24 bg-[#ffffff]">
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#010101]">
+              <h2 className="text-black text-3xl md:text-4xl font-bold mb-6 ">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xl text-[#010101]">
+              <p className="text-xl text-black">
                 Find answers to common questions about our {service.title.toLowerCase()} services.
               </p>
             </div>

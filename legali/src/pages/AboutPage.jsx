@@ -11,9 +11,9 @@ const AboutUs = () => {
   return (
     <>
       <NavbarComponent />
-      <div className="bg- [#010101]">
+      <div className="bg-black">
         {/* Hero Section */}
-        <section className="relative bg-[#b8985a] text-[#010101] py-2">
+        <section className="relative bg-[#b8985a]  py-2">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2 mb-10 md:mb-0">
@@ -55,8 +55,8 @@ const AboutUs = () => {
               </div>
 
               <div className="w-full md:w-1/2 md:pl-12">
-                <h2 className="text-3xl font-bold mb-6 text-[#010101]">Our Story</h2>
-                <p className="text-[#] mb-4">
+                <h2 className="text-3xl font-bold mb-6 text-black">Our Story</h2>
+                <p className="text-black mb-4">
                   Founded in 2023, our document clearance company was established with a
                   mission to simplify the complex world of legal documentation and court
                   services. What began as a small team of dedicated professionals has
@@ -77,8 +77,8 @@ const AboutUs = () => {
         <section className="py-16 bg-[#9c8544]">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-[#010101] mb-4">Our Expertise</h2>
-              <p className="text-[#010101] max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold  mb-4">Our Expertise</h2>
+              <p className=" max-w-2xl mx-auto">
                 We specialize in court services and document processing, helping our
                 clients navigate complex legal requirements with ease and confidence.
               </p>
@@ -95,10 +95,10 @@ const AboutUs = () => {
               }].map(({ Icon, title, desc }, index) => (
                 <div key={index} className="bg-[#ffffff] p-6 rounded-lg shadow-md border  border-[#b8985a]">
                   <div className="bg-[#b8985a] p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                    <Icon size={24} className="text-[#010101]" />
+                    <Icon size={24} className="text-black" />
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-[#b8985a]">{title}</h3>
-                  <p className="text-[#010101]">{desc}</p>
+                  <p className="text-black">{desc}</p>
                 </div>
               ))}
             </div>
@@ -110,7 +110,7 @@ const AboutUs = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2 mb-10 md:mb-0 md:pr-12">
-                <h2 className="text-3xl font-bold mb-6 text-[#010101]">Why Choose Us</h2>
+                <h2 className="text-3xl font-bold mb-6 text-black ">Why Choose Us</h2>
                 <ul className="space-y-4 bg-[#ffffff]">
                   {[
                     {
@@ -128,11 +128,11 @@ const AboutUs = () => {
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start">
                       <div className="bg-[#b8985a] p-2 rounded-full mr-3 mt-1">
-                        <div className="w-4 h-4 bg-[#010101] rounded-full"></div>
+                        <div className="w-4 h-4 bg-black rounded-full"></div>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg text-[#010101]">{item.title}</h3>
-                        <p className="text-[#010101]">{item.desc}</p>
+                        <h3 className="font-semibold text-lg text-black ">{item.title}</h3>
+                        <p className="text-black">{item.desc}</p>
                       </div>
                     </li>
                   ))}
@@ -151,7 +151,7 @@ const AboutUs = () => {
                   </p>
                   <div className="text-center">
                     <Link to="/contactUs">
-                      <button className="bg-[#b8985a] hover:bg-[#9c8544] text-[#010101] py-3 px-6 rounded-lg font-medium transition-colors">
+                      <button className="text-black bg-[#b8985a] hover:bg-[#9c8544]  py-3 px-6 rounded-lg font-medium transition-colors">
                         Contact Our Team
                       </button>
                     </Link>

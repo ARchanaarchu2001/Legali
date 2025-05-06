@@ -65,11 +65,11 @@ const ServicesPage = () => {
       <NavbarComponent />
       <div className="bg-[#ffffff] min-h-screen">
         {/* Hero Section */}
-        <div className="bg-[#] text-[#010101]">
+        <div className="bg-[#] ">
           <div className="container mx-auto px-4 py-20 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-black">Our Services</h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-lg leading-relaxed mb-8">
+              <p className="text-lg leading-relaxed mb-8 text-black">
                 Welcome to Amazon Attestation and Documents Clearing, your trusted partner for a
                 comprehensive range of document-related services in the UAE. We specialize in providing
                 efficient, hassle-free solutions to meet your specific needs. With a commitment to excellence
@@ -77,7 +77,7 @@ const ServicesPage = () => {
                 requirements are met promptly and professionally.
               </p>
               <a href="/contactUs">
-                <button className="bg-[#b8985a] hover:bg-[#9c8544] text-[#010101]  font-medium py-3 px-8 rounded-md transition duration-300">
+                <button className="bg-[#b8985a] hover:bg-[#9c8544] text-black font-medium py-3 px-8 rounded-md transition duration-300">
                   Call Us Now
                 </button>
               </a>
@@ -149,26 +149,26 @@ const ServicesPage = () => {
         {/* Additional Services */}
         <div className="bg-[#ffffff] py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#010101]">Our Specialized Services</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-black">Our Specialized Services</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Service 1 */}
               <div className="bg-[#302c20] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border border-[#b8985a]">
-                <div className="bg-[#010101] rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
-                  <div className="text-[#ffffff]">
+                <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
+                  <div className="text-[#fff]">
                     <DocumentIcon />
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-3 text-[#b8985a]">Document Attestation</h3>
 
-                <p className="text-[#ffffff] text-center">
+                <p className="text-[#fff] text-center">
                   Professional attestation services for all types of documents required for UAE official processes.
                 </p>
               </div>
 
               {/* Service 2 */}
               <div className="bg-[#302c20] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border border-[#b8985a]">
-                <div className="bg-[#010101] rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
+                <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#ffffff]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0" />
                   </svg>
@@ -180,7 +180,7 @@ const ServicesPage = () => {
               </div>
                         {/* Service 3 */}
           <div className="bg-[#302c20] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border border-[#b8985a]">
-            <div className="bg-[#010101] rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
+            <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
             <span className="text-[#ffffff]">
                       <CalendarIcon />
                     </span>
@@ -225,7 +225,7 @@ const ServicesPage = () => {
           <p className="text-lg font-medium">Have Questions? Our experts are here to help!</p>
         </div>
         <a href="tel:++971 55 921 7176">
-          <button className="bg-[#b8985a] hover:bg-[#9c8544] text-[#010101] font-medium py-3 px-6 rounded-md hover:bg-gray-100 transition duration-300">
+          <button className="bg-[#b8985a] hover:bg-[#9c8544]  font-medium py-3 px-6 rounded-md hover:bg-gray-100 transition duration-300">
             Contact Us
           </button>
         </a>

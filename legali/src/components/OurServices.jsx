@@ -91,8 +91,8 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#010101] mb-4">Our Services</h2>
-          <p className="text-lg text-[#010101] max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold  mb-4">Our Services</h2>
+          <p className="text-lg max-w-3xl mx-auto">
             We offer a range of services to assist all types of companies and individuals with their operations in the UAE.
             Our services include:
           </p>
@@ -103,11 +103,11 @@ const ServicesSection = () => {
           {serviceCategories.map((category, index) => (
             <div 
               key={index}
-              className="bg-[#010101] rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-[#b8985a]/30"
+              className="bg-black rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-[#b8985a]/30"
             >
               {/* Card Header */}
               <div className="p-6 text-center border-b border-[#b8985a]/30">
-                <div className="inline-flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#010101]">
+                <div className="inline-flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-black">
                   <img 
                     src={category.icon} 
                     alt={category.title} 
@@ -153,7 +153,7 @@ const ServicesSection = () => {
                 onClick={() => toggleCategory(index)}
               >
                 <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-[#010101] flex items-center justify-center mr-3 shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mr-3 shrink-0">
                     <img 
                       src={category.icon} 
                       alt={category.title} 
@@ -173,7 +173,7 @@ const ServicesSection = () => {
               
               {/* Accordion Content */}
               {expandedCategory === index && (
-                <div className="p-4 bg-[#010101] border-t border-[#b8985a]/30">
+                <div className="p-4 bg-black border-t border-[#b8985a]/30">
                   <p className="text-[#ffffff] mb-4 text-sm">{category.description}</p>
                   <ul className="space-y-2">
                     {category.services.map((service, idx) => (
@@ -198,7 +198,7 @@ const ServicesSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link to="/contactUs">
-                <button className="bg-[#b8985a] hover:bg-[#9c8544] text-[#010101]  px-6 py-3 rounded-md font-medium transition-colors border border-[#b8985a]">
+                <button className="bg-[#b8985a] hover:bg-[#9c8544] text-black  px-6 py-3 rounded-md font-medium transition-colors border border-[#b8985a]">
                   Contact Us
                 </button>
               </Link>
