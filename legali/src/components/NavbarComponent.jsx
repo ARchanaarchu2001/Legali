@@ -108,7 +108,7 @@ const NavbarComponent = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div  className="hidden md:flex items-center space-x-8">
+            <div  className="hidden md:flex items-center space-x-8 text-black">
               {navItems.map((item) => (
                 item.hasDropdown ? (
                   <div 
@@ -121,7 +121,7 @@ const NavbarComponent = () => {
                     <Link
                       to={item.href}
                       // style={{ color: '#010101' }}
-                      className="hover:text-[#b8985a] transition-colors font-medium flex items-center"
+                      className="hover:text-[#b8985a] text-black transition-colors font-medium flex items-center"
                     >
                       {item.name}
                       <ChevronDown className="ml-1 w-4 h-4" />
@@ -189,15 +189,15 @@ const NavbarComponent = () => {
       {isMenuOpen && (
         <div 
           ref={mobileMenuRef}
-          className="fixed inset-0 bg-white z-50 md:hidden"
+          className="fixed inset-0 bg-white z-50 md:hidden "
           style={{ top: '88px' }} // Adjust based on your navbar height
         >
-          <div className="container mx-auto px-4 py-6 flex flex-col space-y-5">
+          <div className="container mx-auto px-4 py-6 flex flex-col space-y-5 ">
             {navItems.map((item) => (
               item.hasDropdown ? (
-                <div key={item.name} className="flex flex-col">
+                <div key={item.name} className="flex flex-col ">
                   <button 
-                    className="text-gray-700 hover:text-[#b8985a] transition-colors font-medium text-lg flex items-center justify-between py-2 border-b border-gray-100"
+                    className=" hover:text-[#b8985a] transition-colors font-medium text-lg flex items-center justify-between py-2 border-b border-gray-100"
                     onClick={toggleMobileServices}
                   >
                     {item.name}
@@ -210,7 +210,7 @@ const NavbarComponent = () => {
                         <Link
                           key={service.slug}
                           to={`/services/${service.slug}`}
-                          className="text-base text-gray-600 hover:text-[#b8985a] py-1"
+                          className="text-base  hover:text-[#b8985a] py-1"
                           onClick={() => {
                             setIsMenuOpen(false);
                             setIsMobileServicesOpen(false);
